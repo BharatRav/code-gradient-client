@@ -67,17 +67,18 @@ border: none;
 padding: 10px;
 border-radius: 5px;
 font-size: 16px;
+font-weight: bold;
 cursor: pointer;
 transition: var(--transition);
 }
 
-.join-btn{
+.join-btn,.leave-btn{
   background-color: var(--light-green);
   width: 100px;
   margin-left: auto;
 }
 
-.join-btn:hover{
+.join-btn:hover, .leave-btn:hover{
   background-color: var(--light-green-hover);
 }
 
@@ -97,4 +98,58 @@ transition: var(--transition);
   color:var(--light-green-hover);
   border-color:var(--light-green-hover);
   transition: var(--transition);
+}
+
+
+.main-wrap {
+display: grid;
+grid-template-columns: 230px 1fr;
+height: 100vh;
+}
+
+.aside {
+  background-color: #1c1e29;
+  padding: 16px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-inner {
+  flex: 1;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.user-name {
+  margin-top: 10px;
+}
+
+.logo-image {
+    /* height:40px; */
+    height: 120px;
+   max-width: 100%;
+}
+
+.logo {
+  border-bottom: 1px solid #424242;
+  padding-bottom: 10px;
+}
+
+.leave-btn {
+  margin-top: 20px;
+  width: 100%;
 }
